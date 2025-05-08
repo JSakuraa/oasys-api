@@ -1,5 +1,6 @@
 import createApp from "./lib/create-app";
 import classesRoute from "./routes/classes/classes.route";
+import meRoute from "./routes/me/me.route";
 import achievementRoute from "./routes/users/achievements.route";
 import inventoryRoute from "./routes/users/inventory.route";
 import statsRoute from "./routes/users/stats.route";
@@ -16,5 +17,6 @@ app.route("/", statsRoute);
 app.route("/", inventoryRoute);
 app.route("/", achievementRoute);
 app.route("/classes", classesRoute);
+app.route("/me", meRoute);
 
 export default app;

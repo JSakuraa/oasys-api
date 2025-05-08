@@ -4,6 +4,7 @@ export interface AppBindings {
   Variables: {
     logger: PinoLogger;
   };
+  CLERK_SECRET_KEY: string;
 }
 
 export type User = {
